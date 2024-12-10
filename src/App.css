@@ -1,15 +1,13 @@
-/* تحسين عام للجسم (Body) */
 body {
   margin: 0;
-  font-family: "Roboto", Arial, sans-serif; /* خط موحد */
-  background: linear-gradient(120deg, #f6d365, #fda085); /* خلفية متدرجة */
+  font-family: "Roboto", Arial, sans-serif;
+  background: linear-gradient(120deg, #f6d365, #fda085); 
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 
-/* الحاوية */
 .portfolio .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -19,23 +17,38 @@ body {
   align-items: start;
 }
 
-/* الكروت (كما هي) */
 .card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* تحسين الظلال */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   font-size: 16px;
   line-height: 1.7;
 }
 
-/* Sidebar */
 .sidebar {
   text-align: center;
   height: 100%;
-  background: rgba(255, 255, 255, 0.9); /* خلفية شبه شفافة */
+  background: #fff; 
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.dynamic-content {
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  font-size: 16px; 
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
 }
 
 .profile-pic img {
@@ -43,18 +56,18 @@ body {
   height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* تأثير جميل للصورة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .name {
-  font-size: 26px; /* حجم موحد */
+  font-size: 26px; 
   margin: 10px 0;
   font-weight: bold;
   color: #333;
 }
 
 .role {
-  font-size: 18px; /* حجم موحد */
+  font-size: 18px; 
   color: #555;
   margin-bottom: 15px;
 }
@@ -68,14 +81,13 @@ body {
   margin: 0 8px;
   color: #ff6b6b;
   font-size: 18px;
-  transition: transform 0.3s ease; /* تأثير عند التمرير */
+  transition: transform 0.3s ease; 
 }
 
 .social-links a:hover {
-  transform: scale(1.2); /* تكبير الأيقونة عند التمرير */
+  transform: scale(1.2);
 }
 
-/* Navigation */
 .navigation {
   display: flex;
   justify-content: center;
@@ -85,41 +97,28 @@ body {
 }
 
 .navigation button {
-  background: rgba(255, 255, 255, 0.8); /* خلفية شبه شفافة */
+  background: rgba(255, 255, 255, 0.8);
   border: 2px solid #ff6b6b;
   color: #ff6b6b;
   padding: 12px 18px;
   margin: 0 12px;
-  border-radius: 8px; /* زوايا ناعمة */
+  border-radius: 8px; 
   cursor: pointer;
   font-size: 15px;
   font-weight: bold;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* تحسين الظلال */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .navigation button.active,
 .navigation button:hover {
   background: #ff6b6b;
   color: white;
-  transform: translateY(-3px); /* حركة بسيطة */
+  transform: translateY(-3px); 
 }
 
-/* Dynamic Content */
-.dynamic-content {
-  min-height: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  font-size: 16px; /* توحيد الخط */
-  line-height: 1.8;
-  color: #333;
-  text-align: justify;
-}
 
-/* تحسين العناوين */
+
 .dynamic-content h2 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -127,46 +126,51 @@ body {
   text-align: center;
 }
 
-/* تحسين الفقرات */
-.dynamic-content p,
-.dynamic-content li {
-  font-size: 16px; /* توحيد حجم الخط */
-  line-height: 1.8; /* تحسين المسافات */
-  color: #555; /* لون موحد للنص */
+.dynamic-content p{
+  font-size: 16px;
+  line-height: 1.8; 
+  color: #555; 
   margin-bottom: 15px;
 }
 
-/* Experience Section */
 .experience-item {
   margin-bottom: 20px;
 }
 
 .experience-item h3 {
-  font-size: 20px; /* حجم موحد */
+  font-size: 20px;
   color: #ff6b6b;
   margin-bottom: 5px;
 }
 
 .experience-item p {
-  font-size: 16px; /* حجم موحد */
+  font-size: 16px; 
   color: #555;
   line-height: 1.6;
 }
 
-/* Skills Section */
 .skills-section {
   display: flex;
   flex-direction: column;
 }
 
 .skills-category h3 {
-  font-size: 18px; /* حجم موحد */
+  font-size: 18px; 
   color: #ff6b6b;
   margin-bottom: 10px;
 }
 
 .skills-category p {
-  font-size: 16px; /* حجم موحد */
+  font-size: 16px; 
   color: #555;
   line-height: 1.6;
 }
+.dynamic-content ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.dynamic-content li {
+  margin-bottom: 15px; 
+}
+

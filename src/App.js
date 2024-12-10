@@ -154,10 +154,10 @@ const App = () => {
             </p>
           </div>
           <div className="social-links">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/maya-abdoh" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/maya-abdoh-a0a14b279/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
